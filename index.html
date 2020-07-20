@@ -37,7 +37,7 @@
         function getFactAjax(){
             let number = numberInput.value;
             let xhr = new XMLHttpRequest();
-            xhr.open('Get', 'http://numbersapi.com/'+number);
+            xhr.open('Get', 'https://cors-anywhere.herokuapp.com/http://numbersapi.com/'+number);
 
             xhr.onload = function(){
                 if(this.status == 200 && number != ''){
